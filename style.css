@@ -1,18 +1,28 @@
 /* universal  */
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Poppins:ital,wght@1,300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
-*::selection{
+
+*::selection {
     background-color: black;
     color: #e86029;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 /* navbar */
 #navbar {
     font-size: 22px;
     background-color: rgb(0, 0, 0);
+    /* background: transparent; */
     display: flex;
     align-items: center;
+    height: 90px;
 }
 
 .logo {
@@ -21,7 +31,7 @@
 }
 
 .logo img {
-    color: #e86029;
+    /* color: #e86029; */
     width: 90px;
     border-radius: 50%;
 }
@@ -38,36 +48,37 @@ ul li {
 ul li a {
     font-weight: bold;
     text-decoration: none;
-    color: #e86029;
-   
+    color: #ffffff;
+
 }
 
-ul li a:hover { 
+ul li a:hover {
     /* background-color: #ffa582; */
-    color: #e28661;
+    color: #ec5a20;
     /* border: 0.1px #e86029 solid; */
-    border-radius: 10px;
+    /* border-radius: 10px; */
 
 }
 
 /* Home */
-span{
-    font-family: cursive,'ariel';
+span {
+    font-family: cursive, 'ariel';
     font-weight: bolder;
-    
+
 }
+
 .home-primary {
-    background: url(img/photo.jpeg) no-repeat center ;
+    background: url(img/photo.jpeg) no-repeat center;
     background-size: cover;
     opacity: 1;
     background: blur;
     height: 88vh;
     display: flex;
     flex-direction: column;
-    color:#ffffff;
+    color: #ffffff;
     text-align: center;
     font-weight: bold;
-    
+
 }
 
 .home-primary-h1 {
@@ -78,7 +89,8 @@ span{
 .home-primary-p {
     font-size: 50px;
 }
-button{
+
+button.order {
     font-size: 20px;
     background: white;
     padding: 15px;
@@ -88,7 +100,8 @@ button{
     font-weight: bold;
     transition: all 0.4s ease;
 }
-button:hover{
+
+button.order:hover {
     cursor: pointer;
     background-color: rgb(251, 208, 164);
     scale: 1.2;
@@ -120,17 +133,140 @@ button:hover{
     font-size: 30px;
 }
 
+/* type */
+.type {
+    padding: 20px 0px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+/* types */
+.types {
+    width: 400px;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.type .types:hover {
+    /* scale: 1.2; */
+    box-shadow: #000000;
+    box-shadow: 5px 5px 10px black;
+}
+
 /* footer  */
-footer{
+footer {
     font-size: 20px;
     padding: 20px 0px;
     text-align: center;
     align-items: center;
     justify-content: center;
     background-color: black;
-  color: white;
+    color: white;
 }
 
-.name{
+.name {
     color: #e86029;
+}
+
+/* clients */
+.clients {
+    background-color: rgb(215, 206, 206);
+
+    text-align: center;
+}
+
+.client-h1 {
+    padding: 10px 0px;
+    font-size: 40px;
+}
+
+section.company-logo-img {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px;
+}
+
+.company-logos {
+    width: 200px;
+    margin: 20px;
+}
+
+/* contact */
+/* #contact{
+    display: flex;
+    text-align: center;
+    padding: 10px ;
+   
+}
+form{
+    background-color: bisque;
+}
+input{
+    width: 200px;
+} */
+#contact {
+    background-color: rgb(255, 246, 196);
+    text-align: center;
+    padding: 20px;
+}
+
+.input {
+    font-size: 19px;
+    padding: 7px;
+    margin: 7px;
+    width: 1.2ems;
+    font-family: 'Balsamiq Sans', cursive;
+    border: 5px solid green;
+    border-radius: 20px;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+.label {
+    font-size: 29px;
+
+}
+
+#contact h1 {
+    padding: 10px;
+}
+
+.btn-submit {
+    font-size: 20px;
+    background: white;
+    padding: 15px;
+    border: #e86029 5px solid;
+    border-radius: 10px;
+    color: #e86029;
+    font-weight: bold;
+}
+
+.btn-submit:hover {
+    cursor: pointer;
+    background-color: rgb(251, 208, 164);
+    /* scale: 1.2; */
+    box-shadow: #000000;
+    box-shadow: 5px 5px 10px black;
+}
+
+#non-veg-h1{font-size: 40px;
+    text-align: center;
+    color: orange;
+    padding: 20px;
+    text-decoration: underline orange;
+}
+#veg-h1{
+    font-size: 40px;
+    text-align: center;
+    color: rgb(62, 225, 62);
+    padding: 20px;
+    text-decoration: underline rgb(32, 235, 32);
+}
+#desert-h1{font-size: 40px;
+    text-align: center;
+    color: red;
+    padding: 20px;
+    text-decoration: underline red;
 }
